@@ -1,8 +1,7 @@
-# 🍽️ Zaibten Food Order Management System
+# 🍽️ Food Order Management System
 
 A full-stack food order management platform built with modern technologies to streamline online food ordering, built for performance, scalability, and ease of use.
 
-🚀 **Live Demo**: [zaibten-food.vercel.app](https://zaibtenfood.vercel.app)
 
 ---
 
@@ -25,21 +24,3 @@ A full-stack food order management platform built with modern technologies to st
 🎨 Clean, Responsive UI
 
 
----
-
-## 🚀 Getting Started
-
-Follow these steps to set up the project locally:
-
-```bash
-# Clone the repository
-git clone https://github.com/zaibten/Zaibten-Food-Order-Management-System.git
-cd Zaibten-Food-Order-Management-System
-
-# Install frontend dependencies
-cd client
-npm install
-
-# Install backend dependencies
-cd ../server
-npm install
