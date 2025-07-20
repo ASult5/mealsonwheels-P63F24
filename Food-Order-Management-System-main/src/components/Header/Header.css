@@ -1,0 +1,109 @@
+.header-container {
+  border-bottom: 1px solid #ddd;
+  background-color: #ffffff;
+}
+
+.announcement-bar {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  padding: 8px 16px;
+}
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
+  text-decoration: none;
+}
+
+.mobile-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: none;
+}
+
+.nav-links.open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  padding: 16px 20px;
+  border-top: 1px solid #eee;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.nav-links a,
+.nav-links span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 0;
+  color: #333;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.login-btn,
+.logout-btn {
+  background-color: #222;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 8px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.logout-btn {
+  background-color: #ff4d4d;
+}
+
+.desktop-nav {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 12px 0;
+  font-size: 15px;
+}
+
+.desktop-nav a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.desktop-nav span {
+  color: #555;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mobile-icon {
+    display: block;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+}
