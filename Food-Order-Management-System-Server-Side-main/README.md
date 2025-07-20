@@ -1,4 +1,4 @@
-# 🍽️ Zaibten Food Order Server
+# 🍽️  Food Order Server
 
 Server side of order management for restaurents built with nodejs with smtp, express, nodemon.
 
@@ -25,21 +25,3 @@ Server side of order management for restaurents built with nodejs with smtp, exp
 🎨 Clean, Responsive UI
 
 
----
-
-## 🚀 Getting Started
-
-Follow these steps to set up the project locally:
-
-```bash
-# Clone the repository
-git clone https://github.com/zaibten/Zaibten-Food-Order-Management-System-Server-Side.git
-cd Zaibten-Food-Order-Management-System-Server-Side
-
-# Install frontend dependencies
-cd client
-npm install
-
-# Install backend dependencies
-cd ../server
-npm install
