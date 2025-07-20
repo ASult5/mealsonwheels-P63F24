@@ -2,7 +2,6 @@
 
 Server side of order management for restaurents built with nodejs with smtp, express, nodemon.
 
-🚀 **Live Demo**: [zaibtenserverfood.vercel.app](https://zaibtenserverfood.vercel.app)
 
 ---
 
