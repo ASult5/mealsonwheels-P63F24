@@ -10,7 +10,6 @@ Restaurent side of order management for restaurents and this platform built with
 - ⚛️ **Frontend**: [React.js](https://reactjs.org/)
 - 🌐 **Backend**: [Node.js](https://nodejs.org/)
 - 🔥 **Authentication & Database**: [Firebase](https://firebase.google.com/)
-- ☁️ **Deployment**: [Vercel](https://vercel.com/)
 
 ---
 
