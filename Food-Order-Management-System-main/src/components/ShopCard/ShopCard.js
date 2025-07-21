@@ -94,7 +94,7 @@ const ShopCard = () => {
             <span className="border py-2 ps-2 salon-title">
               TOP 10{" "}
               <span className="py-2 px-2 text-white" style={{ backgroundColor: "#e29521" }}>
-  RESTAURENTS
+  RESTAURANTS
 </span>
 
             </span>

@@ -3,154 +3,15 @@ import axios from 'axios';
 import Footer from "../Footer/Footer";
 
 const skinQuestions = [
-  {
-    question: "What is your age group?",
-    options: ["Under 20", "21–30", "31–40", "41–50", "50+"],
-  },
-  {
-    question: "What best describes your skin type?",
-    options: ["Oily", "Dry", "Combination", "Normal", "Sensitive"],
-  },
-  {
-    question: "Do you feel your skin gets shiny during the day?",
-    options: ["Yes – in T-zone", "Yes – entire face", "No"],
-  },
-  {
-    question: "Does your skin feel tight or flaky after washing?",
-    options: ["Yes", "No", "Sometimes", "Depends on weather"],
-  },
-  {
-    question: "What is your main skin concern?",
-    options: ["Acne", "Hormonal acne", "Dry patches", "Excess oil", "Pigmentation", "Wrinkles", "Redness", "Dullness", "Large pores", "Dark spots", "Uneven skin", "Sagging skin", "Post acne scars"],
-  },
-  {
-    question: "Do you experience frequent breakouts?",
-    options: ["Yes", "Occasionally", "No"],
-  },
-  {
-    question: "Do you have any marks or pigmentation left behind from acne or sun damage?",
-    options: ["Yes", "No", "Very minor", "Very noticeable"],
-  },
-  {
-    question: "How often do you follow a skincare routine?",
-    options: ["Daily", "Sometimes", "Rarely", "Never"],
-  },
-  {
-    question: "What kind of products do you currently use?",
-    options: ["Cleanser", "Moisturizer", "Sunscreen", "Serum", "Spot treatment", "Scrubs", "Toners", "None"],
-  },
-  {
-    question: "Do you live in a humid or dry environment?",
-    options: ["Humid", "Dry"],
-  },
-  {
-    question: "Do you have any known allergies or sensitivities to skincare products?",
-    options: ["Yes – Fragrances", "Yes – Alcohol-based products", "Yes – Essential oils", "Yes – Specific ingredients (e.g., salicylic acid, retinol)", "No known allergies", "Not sure"],
-  },
-  {
-    question: "How many hours of sleep do you get on average?",
-    options: ["Less than 4 hours", "4–6 hours", "6–8 hours", "More than 8 hours"],
-  },
-  {
-    question: "Do you wear makeup daily?",
-    options: ["Yes – Full face daily", "Yes – Light/Minimal makeup daily", "Only on special occasions", "Rarely or never"],
-  },
-  {
-    question: "Are your breakouts linked to your hormonal changes?",
-    options: ["Yes – due to PCOS, or other hormonal conditions", "Sometimes, but not sure", "No, my breakouts seem unrelated", "I don't get breakouts"],
-  },
-  {
-    question: "Are you currently on any medication that affects your skin?",
-    options: ["Yes – acne medication (e.g., isotretinoin, antibiotics)", "Yes – supplements or herbal remedies", "No, I’m not on any skin-affecting medication", "Not sure"],
-  },
-  {
-    question: "Would you prefer quick daily solutions or long-term care routines?",
-    options: ["Quick and easy daily fixes", "Long-term treatments with lasting results", "A balanced combination of both", "I need guidance on what’s best for me"],
-  },
-  {
-    question: "Do you perfer aesthetic treatment?",
-    options: ["Yes", "No", "Not sure"],
-  },
+ 
 ];
 
 const makeupQuestions = [
-  {
-    question: "What is your face shape?",
-    options: ["Round", "Oval", "Heart-shaped", "Square", "Long/Rectangular", "I’m not sure"],
-  },
-  {
-    question: "What best describes your eye shape?",
-    options: ["Hooded eyes", "Almond-shaped eyes", "Monolid", "Big/sunken socket eyes", "Downturned eyes", "I’m not sure"],
-  },
-  {
-    question: "How would you describe your skin tone?",
-    options: ["Fair", "Light", "Medium / Wheatish", "Tan", "Deep / Dark", "Not sure"],
-  },
-  {
-    question: "What kind of makeup look do you prefer?",
-    options: ["Minimal / No-makeup look", "Soft glam (balanced and subtle)", "Full glam (bold eyes/lips and contour)", "Natural with a pop (bold lip or eye only)", "I’m still exploring"],
-  },
-  {
-    question: "What kind of lip colors do you feel most confident in?",
-    options: ["Nudes / Peachy tones", "Pinks & Mauves", "Bold reds / Berries", "Browns / Deep tones", "I like experimenting"],
-  },
-  {
-    question: "What kind of base do you usually go for?",
-    options: ["No base or only concealer", "BB cream / Light foundation", "Medium coverage foundation", "Full coverage foundation", "Not sure"],
-  },
+  
 ];
 
 const faqs = [
-  {
-    question: "What causes acne?",
-    answer:
-      "Acne is typically caused by clogged pores due to excess oil, dead skin cells, bacteria, or hormonal changes. Diet, stress, and improper skincare can also contribute.",
-  },
-  {
-    question: "How do I know my skin type?",
-    answer:
-      "Oily: Shiny, greasy appearance\nDry: Flaky, tight skin\nCombination: Oily T-zone, dry cheeks\nSensitive: Easily irritated or red\nNormal: Balanced oil and hydration",
-  },
-  {
-    question: "Why do I keep getting pimples?",
-    answer:
-      "Pimples can be caused by clogged pores, excess oil production, bacteria, hormonal changes, or stress. Using the wrong skincare products can also worsen breakouts.",
-  },
-  {
-    question: "What is the solution for oily skin?",
-    answer:
-      "Use a gel-based cleanser, oil-free moisturizer, and products with salicylic acid. Wash your face twice a day — but avoid overwashing, which can increase oil production.",
-  },
-  {
-    question: "How can I reduce dark spots?",
-    answer:
-      "Use products with Vitamin C, niacinamide, and sunscreen daily. For faster results, gentle exfoliation with AHA/BHA serums at night can help.",
-  },
-  {
-    question: "What’s the best moisturizer for dry skin?",
-    answer:
-      "Look for moisturizers with hyaluronic acid, ceramides, or glycerin. Avoid products with alcohol or fragrance if your skin is sensitive.",
-  },
-  {
-    question: "What should a basic skincare routine look like?",
-    answer:
-      "🌞 Morning: Cleanser → Moisturizer → Sunscreen\n🌙 Night: Cleanser → Treatment (e.g., retinol, acne serum) → Moisturizer",
-  },
-  {
-    question: "Is sunscreen really necessary?",
-    answer:
-      "Yes! Daily sunscreen (SPF 30 or higher) protects your skin from sun damage, premature aging, and dark spots — even indoors or on cloudy days.",
-  },
-  {
-    question: "How can I treat acne scars?",
-    answer:
-      "Ingredients like retinol, niacinamide, AHAs (like glycolic acid), and BHA (like salicylic acid) help fade scars over time. Consistency is key.",
-  },
-  {
-    question: "What ingredients should I look for in skincare?",
-    answer:
-      "Acne: Salicylic acid, benzoyl peroxide\nDryness: Hyaluronic acid, ceramides\nAging: Retinol, peptides, vitamin C\nDark spots: Niacinamide, kojic acid, arbutin",
-  },
+  
 ];
 
 const PersonalizedQuiz = () => {

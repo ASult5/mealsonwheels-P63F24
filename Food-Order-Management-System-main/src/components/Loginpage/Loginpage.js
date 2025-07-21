@@ -190,7 +190,7 @@ const handleSignUp = async (e) => {
               Sign In
             </button>
 
-            <p className="social-text loginp"> or Sign in with </p>
+            <p className="social-text loginp"></p>
 
              <Link
       to="/"
@@ -205,23 +205,15 @@ const handleSignUp = async (e) => {
         borderRadius: "6px",
         lineHeight: "1", // ensures vertical centering
         cursor: "pointer",
+        padding: "13px",
       }}
     >
-      Proceed to home
+      Proceed To Home
     </Link>
     <br></br>
 
             <div className="social-media">
-              <a href="#!" className="social-icon">
-                <FontAwesomeIcon icon={faGoogle} className="my-auto mx-auto" />
-              </a>
-
-              <a href="#!" className="social-icon">
-                <FontAwesomeIcon
-                  icon={faLinkedinIn}
-                  className="my-auto mx-auto"
-                />
-              </a>
+             
             </div>
           </form>
 
@@ -280,7 +272,7 @@ const handleSignUp = async (e) => {
             <button className="btn" onClick={handleSignUp}>
               Sign Up
             </button>
-            <p className="social-text loginp">Or Sign up with</p>
+            <p className="social-text loginp"></p>
              <Link
       to="/"
       style={{
@@ -294,22 +286,14 @@ const handleSignUp = async (e) => {
         borderRadius: "6px",
         lineHeight: "1", // ensures vertical centering
         cursor: "pointer",
+         padding: "13px",
       }}
     >
       Proceed to home
     </Link>
     <br></br>
             <div className="social-media">
-              <a href="#!" className="social-icon">
-                <FontAwesomeIcon icon={faGoogle} className="my-auto mx-auto" />
-              </a>
-
-              <a href="#!" className="social-icon">
-                <FontAwesomeIcon
-                  icon={faLinkedinIn}
-                  className="my-auto mx-auto"
-                />
-              </a>
+             
             </div>
           </form>
         </div>
@@ -323,7 +307,7 @@ const handleSignUp = async (e) => {
             </h3>
 
             <p className="loginp">
-              Fod Planet, your one stop solution for cravings
+              Meals On Wheels, your one stop solution for cravings
             </p>
 
             <button
@@ -339,10 +323,10 @@ const handleSignUp = async (e) => {
 
         <div className="panel right-panel">
           <div className="content">
-            <h3 className="loginh3">Already Registered ?</h3>
+            <h3 className="loginh3">Already Registered?</h3>
 
             <p className="loginp">
-               Fod Planet, your one stop solution for cravings
+               Meals on Wheels, your one stop solution for cravings
             </p>
 
             <button
